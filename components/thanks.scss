@@ -1,0 +1,17 @@
+@import "../styles/mixins.scss";
+
+.icons {
+    font-size: 80%;
+
+    div {
+        margin-bottom: 15px;
+    }
+    
+    @include breakpoint(sm) {
+        display: flex;
+
+        div {
+            width: 20%;
+        }
+    }
+}

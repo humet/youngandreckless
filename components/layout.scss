@@ -1,0 +1,149 @@
+@import "../styles/mixins.scss";
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+strong,
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.small {
+    font-size: 0.6em;
+    line-height: 1.8;
+}
+
+.wrapper {
+    padding: 10px;
+    min-height: calc(100vh - 20px); 
+
+    @include breakpoint(sm) {
+        padding: 40px 0;
+        min-height: calc(100vh - 80px); 
+    }
+}
+
+.dateWrapper {
+    width: 136px;
+
+    @include breakpoint(sm) {
+        width: 220px;
+    }
+}
+
+.date {
+    font-size: 25px;
+    display: block;
+
+    &__subtitle {
+        font-size: 18px;
+        line-height: 1;
+    }
+}
+
+@include breakpoint(sm) {
+    .date {
+        font-size: 40px;
+    
+        &__subtitle {
+            font-size: 28px;
+        }
+    }
+}
+
+main {
+    max-width: 394px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    min-height: 736px;
+
+    @include breakpoint(sm) {
+        width: 90vw;
+        max-width: 1440px;
+        height: 880px;
+        padding: 0;
+    }
+}
+
+.content {
+    padding: 20px 0;
+
+    @include breakpoint(sm) {
+        width: 620px;
+        padding: 40px;
+    }
+}
+
+h1 {
+    font-size: 1.2em;
+
+    @include breakpoint(sm) {
+        font-size: 1.9em;
+    }
+}
+
+.email {
+    width: 90%;
+    border: solid #000 2px;
+
+    @include breakpoint(sm) {
+        width: 436px;
+        float: left;
+    }
+}
+
+@include breakpoint(sm) {
+    .emailWrapper {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.emailOptinLabel {
+    width: 80%;
+
+    @include breakpoint(sm) {
+        width: 94%;
+    }
+}
+
+button {
+    margin-top: 20px;
+    background: #EA3F33;
+    border: none;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
+.breakWrapper {
+    width: 100%;
+    height: 736px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @include breakpoint(sm) {
+      height: 900px;
+    }
+  }
+  
