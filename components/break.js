@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import NProgress from "nprogress"
 
-import loadImage from '../lib/image-promise/dist/image-promise.common-js';
+import loadImage from '../lib/image-promise.common-js';
 import BreakMe from "../components/breakme"
 import Head from 'next/head'
 import Header from "../components/header"
