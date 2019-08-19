@@ -12,6 +12,7 @@ module.exports = compose([
     [withTM, tmConfig],
     [withFonts],
     {
+        target: 'server',
         webpack(config) {
             return config;
         }
