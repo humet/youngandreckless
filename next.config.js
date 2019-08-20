@@ -6,9 +6,12 @@ const compose = require('next-compose')
 
 const tmConfig = {transpileModules: ['gsap']}
 
+const nextConfig= {exportTrailingSlash: true}
+
 module.exports = compose([
     [withCss],
     [withSass],
     [withTM, tmConfig],
-    [withFonts]
+    [withFonts],
+    nextConfig
 ])
