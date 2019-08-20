@@ -24,7 +24,7 @@
   "scripts": {
     "build": "next build",
     "export": "next export",
-    "now-build": "next build && next export -o dist"
+    "now-build": "next build && next export -o public"
   },
   "devDependencies": {
     "next-compose": "^0.0.2"
