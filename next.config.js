@@ -10,10 +10,5 @@ module.exports = compose([
     [withCss],
     [withSass],
     [withTM, tmConfig],
-    [withFonts],
-    {
-        webpack(config) {
-            return config;
-        }
-    }
+    [withFonts]
 ])

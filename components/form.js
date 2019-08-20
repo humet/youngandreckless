@@ -33,8 +33,28 @@ class Form extends Component {
     }
 
     handleButtonClick (e) {
-        Router.push('/confirm')
         e.preventDefault()
+        var data = new FormData();
+        data.append("email", this.state.email);
+        data.append("ajax", "1");
+
+        var xhr = new XMLHttpRequest();
+
+        xhr.addEventListener('load', (e) => {
+            if (e.currentTarget.readyState === 4) {
+                var response = JSON.parse(e.currentTarget.response);
+                if(response['success'] == true) {
+                    Router.push('/confirm')
+                    //console.log(response)
+                } else {
+                    this.setState({formErrors: {email: response['errorMessage']}})
+                    //console.log(response)
+                }
+            }
+         })
+
+        xhr.open("POST", "https://yr.dev.ps-tek.de/selligent/gamification/ajax");
+        xhr.send(data);
     }
 
     validateField(fieldName, value) {

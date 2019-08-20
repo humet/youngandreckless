@@ -46,7 +46,7 @@ class Break extends Component {
         loadImage([originalImage, breakImage, mask])
         .then((allImgs) => {
             //console.log(allImgs.length, 'images loaded!', allImgs);
-            console.log(allImgs[0].naturalHeight)
+            //console.log(allImgs[0].naturalHeight)
             this.createBreak(allImgs[0], allImgs[1], allImgs[2], this.state.clickPos)
         })
         .catch(function (err) {
