@@ -1,4 +1,5 @@
 {
   "version": 2,
-  "name": "youngandreckless"
+  "name": "youngandreckless",
+  "routes": [{ "src": "/robots.txt", "dest": "/static/robots.txt" }]
 }
