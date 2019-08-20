@@ -1,0 +1,224 @@
+.icons {
+  font-size: 80%; }
+  .icons div {
+    margin-bottom: 15px; }
+  @media (min-width: 768px) {
+    .icons {
+      display: flex; }
+      .icons div {
+        width: 20%; } }
+
+.shake {
+  animation: shake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px; }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0); } }
+
+.breakContainer {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5; }
+
+strong,
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+  font-style: normal; }
+
+.small {
+  font-size: 0.6em;
+  line-height: 1.8; }
+
+.wrapper {
+  padding: 10px;
+  min-height: calc(100vh - 20px); }
+  @media (min-width: 768px) {
+    .wrapper {
+      padding: 40px 0;
+      min-height: calc(100vh - 80px); } }
+
+.dateWrapper {
+  width: 136px; }
+  @media (min-width: 768px) {
+    .dateWrapper {
+      width: 220px; } }
+
+.date {
+  font-size: 25px;
+  display: block; }
+  .date__subtitle {
+    font-size: 18px;
+    line-height: 1; }
+
+@media (min-width: 768px) {
+  .date {
+    font-size: 40px; }
+    .date__subtitle {
+      font-size: 28px; } }
+
+main {
+  max-width: 394px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  min-height: 736px; }
+  @media (min-width: 768px) {
+    main {
+      width: 90vw;
+      max-width: 1440px;
+      height: 880px;
+      padding: 0; } }
+
+.content {
+  padding: 20px 0; }
+  @media (min-width: 768px) {
+    .content {
+      width: 620px;
+      padding: 40px; } }
+
+h1 {
+  font-size: 1.2em; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 1.9em; } }
+
+.email {
+  width: 90%;
+  border: solid #000 2px; }
+  @media (min-width: 768px) {
+    .email {
+      width: 436px;
+      float: left; } }
+
+@media (min-width: 768px) {
+  .emailWrapper {
+    display: flex;
+    align-items: center; } }
+
+.emailOptinLabel {
+  width: 80%; }
+  @media (min-width: 768px) {
+    .emailOptinLabel {
+      width: 94%; } }
+
+button {
+  margin-top: 20px;
+  background: #EA3F33;
+  border: none;
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+button:disabled {
+  opacity: 0.5; }
+
+.breakWrapper {
+  width: 100%;
+  height: 736px;
+  max-width: 1440px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .breakWrapper {
+      height: 900px; } }
+
+/* Make clicks pass-through */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: #29d;
+
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+}
+
+/* Fancy blur effect */
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+  opacity: 1.0;
+
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+      -ms-transform: rotate(3deg) translate(0px, -4px);
+          transform: rotate(3deg) translate(0px, -4px);
+}
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  top: 15px;
+  right: 15px;
+}
+
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+
+  border: solid 2px transparent;
+  border-top-color: #29d;
+  border-left-color: #29d;
+  border-radius: 50%;
+
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+          animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+  0%   { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes nprogress-spinner {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+

@@ -1,7 +1,4 @@
 {
   "version": 2,
-  "name": "youngandreckless",
-  "builds": [
-      { "src": "package.json", "use": "@now/static-build" }
-  ]
+  "name": "youngandreckless"
 }
