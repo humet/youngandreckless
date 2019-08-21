@@ -28,5 +28,8 @@
   },
   "devDependencies": {
     "next-compose": "^0.0.2"
+  },
+  "resolutions": {
+    "debug": "^3.2.6"
   }
 }

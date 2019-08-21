@@ -19,23 +19,23 @@ export default function Confirm() {
             <p>Wir haben dir soeben eine E-Mail an deine Adresse gesendet. Bitte bestätige deine Newsletteranmeldung durch einen Klick auf den in der E-Mail enthaltenen Link.</p>
       <div className="icons">
         <div>
-          <img src="/static/images/icons/email.svg" width="50px" alt="E-Mails checken" /><br />
+          <img src="/static/images/icons/email.svg" width="50px" height="50px" alt="E-Mails checken" /><br />
           E-Mails checken
         </div>
         <div>
-        <img src="/static/images/icons/coupon.svg" width="50px" alt="Deinen exklusiven 25% Gutschein erhalten" /><br />
+        <img src="/static/images/icons/coupon.svg" width="50px" height="50px" alt="Deinen exklusiven 25% Gutschein erhalten" /><br />
           Deinen exklusiven 25% Gutschein erhalten
         </div>
         <div>
-        <img src="/static/images/icons/eye.svg" width="50px" alt="Exklusives Preview unseres Onlineshops bekommen" /><br />
+        <img src="/static/images/icons/eye.svg" width="50px" height="50px" alt="Exklusives Preview unseres Onlineshops bekommen" /><br />
           Exklusives Preview unseres Onlineshops bekommen
         </div>
         <div>
-        <img src="/static/images/icons/running.svg" width="50px" alt="Als erster informiert werden, sobald der Onlineshop live geht" /><br />
+        <img src="/static/images/icons/running.svg" width="50px" height="50px" alt="Als erster informiert werden, sobald der Onlineshop live geht" /><br />
           Als erster informiert werden, sobald der Onlineshop live geht
         </div>
         <div>
-        <img src="/static/images/icons/code.svg" width="50px" alt="Gutscheincode einlösen" /><br />
+        <img src="/static/images/icons/code.svg" width="50px" height="50px" alt="Gutscheincode einlösen" /><br />
           Gutscheincode einlösen
         </div>
       </div>

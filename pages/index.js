@@ -9,7 +9,7 @@ import Break from "../components/break"
 import BreakMe from "../components/breakme"
 
 // Set date to countdown to
-var countdownTo = new Date('2019-09-01')
+var countdownTo = new Date('2019-09-10')
 
 export default function HomePage() {
   return (
