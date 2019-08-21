@@ -1,5 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Router from "next/router"
+import withGA from "next-ga"
 
 import "./layout.scss"
 
@@ -15,4 +17,4 @@ Layout.propTypes = {
     children: PropTypes.node.isRequired,
   }
   
-export default Layout
+export default withGA("UA-125423213-5", Router)(Layout);

@@ -2,9 +2,12 @@ import Head from 'next/head'
 
 import Break from "../components/break"
 
+import Router from "next/router"
+import withGA from "next-ga"
+
 import "../components/layout.scss"
 
-export default function BreakPage() {
+function BreakPage() {
   return (
     <div className="wrapper" style={{ backgroundImage: `url(/static/images/background.jpg)`, backgroundSize: `cover`, textAlign: `center` }}>
         <main style={{padding: 0}}>
@@ -18,3 +21,5 @@ export default function BreakPage() {
     </div>
   )
 }
+
+export default withGA("UA-125423213-5", Router)(BreakPage);
