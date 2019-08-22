@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import Countdown from 'react-countdown-now'
+import Countdown from '../components/countdown'
 
 import Layout from "../components/layout"
 import Header from "../components/header"

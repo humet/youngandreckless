@@ -53,7 +53,7 @@ class Form extends Component {
             }
          })
 
-        xhr.open("POST", "https://yr.dev.ps-tek.de/selligent/gamification/ajax");
+        xhr.open("POST", "https://www.youngnreckless.de/selligent/gamification/ajax");
         xhr.send(data);
     }
 
