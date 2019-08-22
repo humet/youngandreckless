@@ -191,7 +191,7 @@ class Break extends Component {
 
     render(){
         return (
-            <div ref={this.canvasWrapperRef} onClick={(event) => this.handleBreakClick(event)} className={this.state.clicked ? "breakContainer shake" : "breakContainer"} style={{ position: `absolute`, display: `flex`, top: 0, left: 0, boxShadow: `0 0 10px 10px rgba(0,0,0,0.4)`, cursor: this.props.clickable && !this.state.clicked ? `url('/static/images/hammer.svg'), url('/static/images/hammer.cur'), crosshair` : `cursor`, background: '#fff' }}>
+            <div ref={this.canvasWrapperRef} onClick={(event) => this.handleBreakClick(event)} className={this.state.clicked ? "breakContainer shake" : "breakContainer"} style={{ position: `absolute`, display: `flex`, top: 0, left: 0, boxShadow: `0 0 10px 10px rgba(0,0,0,0.4)`, cursor: this.props.clickable && !this.state.clicked ? `url('/static/images/hammer.svg'), url('/static/images/hammer.png'), url('/static/images/hammer.cur'), crosshair` : `cursor`, background: '#fff' }}>
             <canvas ref="canvas" style={{ position: `absolute`, top: 0, left: 0, width: `100%`, height: `100%`}} />
             <canvas ref="canvas2" style={{ position: `absolute`, top: 0, left: 0, width: `100%`, height: `100%`}} />
             <div style={{ display: this.props.clickable && !this.state.clicked ? `block` : `none`, width: 450 }}><BreakMe /></div>
