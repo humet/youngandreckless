@@ -34,6 +34,9 @@ class Break extends Component {
     }
 
     componentDidMount(){ 
+        const ReactPixel = require('react-facebook-pixel').default;
+        ReactPixel.init('2441383812609484');
+        ReactPixel.pageView(); 
         this.setupImages()
     }
 
