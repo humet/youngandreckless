@@ -206,8 +206,8 @@ class Break extends Component {
       <h1>STAY RECKLESS!</h1>
       <p>Für mehr Style Inspiration folge uns auf:</p>
       <p>
-          <a href="https://www.facebook.com" target="_blank"><img width="50px" src="/static/images/icons/facebook.svg" alt="Facebook" style={{marginRight: 10}} /></a>
-          <a href="https://www.instagram.com" target="_blank"><img width="50px" src="/static/images/icons/instagram.svg" alt="Instagram" /></a></p>  
+          <a href="https://www.facebook.com/recklessla/" target="_blank"><img width="50px" src="/static/images/icons/facebook.svg" alt="Facebook" style={{marginRight: 10}} /></a>
+          <a href="https://www.instagram.com/recklessLA/" target="_blank"><img width="50px" src="/static/images/icons/instagram.svg" alt="Instagram" /></a></p>  
       </div>
             </div>
         )
