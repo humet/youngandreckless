@@ -11,7 +11,7 @@ import "./break.scss"
 import "../node_modules/nprogress/nprogress.css"
 
 const startDate = new Date('2019-08-30')
-const endDate = new Date('2019-09-10')
+const endDate = new Date('2019-09-10T07:00:00Z')
 const currentTime = new Date();
 const mask = "/static/images/breaks/breakMask.png"
 
