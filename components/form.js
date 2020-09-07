@@ -34,6 +34,9 @@ class Form extends Component {
 
     handleButtonClick (e) {
         e.preventDefault()
+        
+        Router.push('/confirm') // Prevent email submission for previewing
+        
         var data = new FormData();
         data.append("email", this.state.email);
         data.append("ajax", "1");
